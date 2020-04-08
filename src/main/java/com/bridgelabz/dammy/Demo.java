@@ -15,21 +15,14 @@ public class Demo <X, Y, Z>{
         Integer integerArray[]={1,2,3};
         Double doublesArray[]={1.1,2.2,3.3};
         Character characterArray[]={'a','b','c'};
-        toPrint( integerArray );
-        toPrint( doublesArray );
-        toPrint( characterArray );
         new Demo<Integer,Double,Character>(integerArray,doublesArray,characterArray).toPrint(  );
-
-
-
-    }
+ }
     private void toPrint(){
         toPrint( myXArray );
         toPrint( myYArray );
         toPrint( myZArray );
 
     }
-
     private static <E> void toPrint(E[] type)
     {
         for(E value: type)
