@@ -12,13 +12,13 @@ public class Demo <X, Y, Z>{
     }
 
     public static void main(String[] args) {
-        Integer a[]={1,2,3};
-        Double b[]={1.1,2.2,3.3};
-        Character c[]={'a','b','c'};
-        toPrint( a );
-        toPrint( b );
-        toPrint( c );
-        new Demo<Integer,Double,Character>(a,b,c).toPrint(  );
+        Integer integerArray[]={1,2,3};
+        Double doublesArray[]={1.1,2.2,3.3};
+        Character characterArray[]={'a','b','c'};
+        toPrint( integerArray );
+        toPrint( doublesArray );
+        toPrint( characterArray );
+        new Demo<Integer,Double,Character>(integerArray,doublesArray,characterArray).toPrint(  );
 
 
 
