@@ -1,10 +1,14 @@
 package com.bridgelabz.dammy;
 
-public class Demo <T>{
-    T[] myArray;
+public class Demo <X, Y, Z>{
+    X[] myXArray;
+    Y[] myYArray;
+    Z[] myZArray;
 
-    public Demo(T[] myArray) {
-        this.myArray = myArray;
+    public Demo(X[] myXArray, Y[] myYArray, Z[] myZArray) {
+        this.myXArray = myXArray;
+        this.myYArray = myYArray;
+        this.myZArray = myZArray;
     }
 
     public static void main(String[] args) {
@@ -14,14 +18,16 @@ public class Demo <T>{
         toPrint( a );
         toPrint( b );
         toPrint( c );
-        new Demo<Integer>(a).toPrint(  );
-        new Demo<Double>(b).toPrint(  );
-        new Demo<Character>(c).toPrint(  );
+        new Demo<Integer,Double,Character>(a,b,c).toPrint(  );
+
 
 
     }
     private void toPrint(){
-        toPrint( myArray );
+        toPrint( myXArray );
+        toPrint( myYArray );
+        toPrint( myZArray );
+
     }
 
     private static <E> void toPrint(E[] type)
